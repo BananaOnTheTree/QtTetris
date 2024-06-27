@@ -156,6 +156,7 @@ void Widget::keyPressEvent(QKeyEvent *event)
 
 void Widget::CreateBlock(int block[4][4],int block_id)
 {
+    block_cpy(cur_block,next_block);
     switch (block_id)
     {
     case 0:
