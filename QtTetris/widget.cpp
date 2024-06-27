@@ -57,13 +57,7 @@ int item6[4][4]=
     {0,0,0,0}
 };
 //长条
-int item7[4][4]=
-{
-    {0,0,1,0},
-    {0,0,1,0},
-    {0,0,1,0},
-    {0,0,1,0}
-};
+int item7[4][4];
 
 //拷贝方块图案
 inline void block_cpy(int dblock[4][4],int sblock[4][4])
@@ -186,7 +180,6 @@ void Widget::CreateBlock(int block[4][4],int block_id)
         block_cpy(block,item7);
         break;
     default:
-    	block_cpy(block,item1);
         break;
     }
 }
