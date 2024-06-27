@@ -66,7 +66,7 @@ int item7[4][4]=
 };
 
 //拷贝方块图案
-inline void block_cpy(int dblock[4][4],int sblock[4][4])
+void block_cpy(int dblock[4][4],int sblock[4][4])
 {
     for(int i=0;i<4;i++)
         for(int j=0;j<4;j++)
