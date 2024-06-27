@@ -55,6 +55,7 @@ public:
     void GetBorder(int block[4][4],Border &border); //计算边界
     void ConvertStable(int x,int y); //转换为稳定方块
     bool IsCollide(int x,int y,Direction dir); //判断是否会碰撞
+    void block_cpy(int dblock[4][4],int sblock[4][4]); 
 
 public:
     explicit Widget(QWidget *parent = 0);
